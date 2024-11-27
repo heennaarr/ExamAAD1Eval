@@ -1,5 +1,8 @@
 package edu.iesam.examaad1eval.features.ex2
 
+import edu.iesam.examaad1eval.features.ex2.data.remote.Game
+import edu.iesam.examaad1eval.features.ex2.data.remote.Player
+
 class MockEx2RemoteDataSource {
 
     fun getGames(): List<Game>{
