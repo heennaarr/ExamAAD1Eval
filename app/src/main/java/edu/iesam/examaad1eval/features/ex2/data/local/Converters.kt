@@ -6,13 +6,15 @@ import edu.iesam.examaad1eval.features.ex2.data.remote.Player
 
 class Converters {
     private val gson = Gson()
+
     @TypeConverter
-    fun toEntity(json: String): List<Player> {
-        return gson.fromJson(json, Array<Player>::class.java).toList()
+    fun fromPlayerList(players: List<Player>): String {
+        return gson.toJson(players)
     }
+
     @TypeConverter
-    fun fromEntity(entity: List<Player>): String {
-        return gson.toJson(entity)
+    fun toPlayerList(json: String): List<Player> {
+        return gson.fromJson(json, Array<Player>::class.java).toList()
     }
 
 

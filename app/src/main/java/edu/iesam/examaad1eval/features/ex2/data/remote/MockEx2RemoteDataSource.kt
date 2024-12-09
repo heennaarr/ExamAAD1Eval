@@ -1,7 +1,4 @@
-package edu.iesam.examaad1eval.features.ex2
-
-import edu.iesam.examaad1eval.features.ex2.data.remote.Game
-import edu.iesam.examaad1eval.features.ex2.data.remote.Player
+package edu.iesam.examaad1eval.features.ex2.data.remote
 
 class MockEx2RemoteDataSource {
 
